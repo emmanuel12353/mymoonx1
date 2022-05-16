@@ -1,0 +1,675 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+<!--my styles-->
+<link href="bootstrap.min.css" rel="stylesheet" />
+<link href="font-awesome.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="album.css" rel="canonical" />
+
+<script src="bootstrap.min.js"></script>
+<style>
+  .nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    color: white;
+    margin-right: 50px;
+    font-size: 14px
+}
+.logo {
+  color: #00282E;
+  font-weight: 800;
+}
+.search {
+  width: 300px;
+  color: #fdfdfd;
+  border-radius: 20px;
+  border: 1px white;
+  padding: 7px;
+  text-align: center;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.gmail {
+  color: white;
+}
+.nav-link:hover {color: rgb(168, 152, 5);}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+}
+
+.navbar-nav .active {
+    border-bottom: 4px solid #fff
+}
+.logo {
+    margin-bottom: 7px !important
+}
+
+.navbar {
+    padding-top: .5rem;
+    padding-bottom: 0px !important
+}
+
+
+.no-box-shadow{box-shadow: none}.no-box-shadow:focus{box-shadow: none}
+.day{font-size: 9px}.heart{border: 1px soild green !important;border-color: green !important;border-radius: 22px}
+.heart-icon{color: green}.comment-text{font-size: 12px}.delete{font-size: 13px;cursor: pointer}
+
+
+
+  .htext {color: white;}
+  .hearoe {background-image: url(g7.png); background-repeat: no-repeat; background-size: cover;}
+  .hearoe2 {background-color: #00282E; opacity: 0.9;}
+ 
+  .lead {color: white; font-weight: 500; margin: 0%;}
+  .but {background-color: rgb(168, 152, 5); color: white; border: 1px white; width: 200px; margin-top: 20px;}
+  .bit {text-align: center; color: rgb(167, 167, 167);}
+  .ture {
+    margin-left: 90px;
+    margin-bottom: 30px;
+  }
+  .fa {
+    width: 100px;
+
+  }
+  .feart {
+    font-size: 30px;
+    font-weight: 700;
+    color: #babdbe;
+  }
+  .shop {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  hr {
+    width: 200px;
+    padding: 0%;
+   border: 2px solid rgb(3, 56, 36);
+   color: rgb(3, 56, 36);
+  }
+  .fshop {
+    font-size: 17px;
+    color: rgb(3, 56, 36);
+  }
+
+  
+  .site-footer
+{
+  background-color:#00282E;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+</style>
+    <body>
+        <section>
+          
+            <header class="" style="background-color: rgb(184, 182, 48);">
+              <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid container"> 
+                  <a class="navbar-brand" href="#"> 
+                    <div class="logo" style=""><img src="logo.png" width="90px" /></div> </a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="nav navbar-nav navbar-rs"> 
+                          <a class="nav-link fw-bold" aria-current="page" href="#">
+                            <input type="" class="search" placeholder="search for key words">
+                          </a> 
+                          <a class="nav-link fw-bold" aria-current="page" href="#">HOME</a> 
+                          <a class="nav-link fw-bold" href="#">SHOPS</a>
+                          <a class="nav-link fw-bold" href="#">TESTIMONIALS</a> 
+                          <a class="nav-link fw-bold" href="#">ABOUT US</a>   
+                          
+                        </div>
+                    </div>
+                </div>
+            </nav>
+              </header>
+
+        </section>
+
+<section class="hearoe hearoe2">
+  <div class=""  style="overflow-x: hidden;">
+    <div class="container">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border-none">
+          <div class="col-lg-6 p-2 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-3 htext">GLOW LIKE THE SUN</h1>
+            <p class="lead">Treat your skin with love and care</p>
+            <p class="lead">and make it bold</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+              <button type="button" class="btn btn-lg px-4 me-md-2 fw-bold but">Primary</button></div>
+              <div class="row p-2">
+                <div class="col col-lg-2 col-md-2 col-xs-2">
+                  <svg class="bd-placeholder-img rounded-circle" width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                  <svg class="bd-placeholder-img rounded-circle" width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+              <span class="gmail"> info@glwindustries.com.ng</span>
+                </div>          
+              
+            </div>
+          </div>
+          <div class="col-lg-4 offset-lg-2 p-0">
+      
+              <img class="rounded-lg-3" src="h31.png" alt="" width="500">
+          </div>
+        </div>
+      </div>
+    </div>
+      <!--another-->
+</section>
+<section>
+      <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing p-5">
+<h3 class="fw-bolder pt-3 pb-3 bit">FEARTURED IN</h3>
+<div class="row ture pb-5">
+  <div class="col col-lg-3 col-md-3 col-xs-2 feart">BuzzFeoo</div>
+  <div class="col col-lg-3 col-md-3 col-xs-2 feart">NewBeauty</div>
+  <div class="col col-lg-3 col-md-3 col-xs-2 feart">Allure</div>
+  <div class="col col-lg-3 col-md-3 col-xs-2 feart">Namity Firm</div>
+</div>
+<div class="row ">
+<div class="col col-lg-1 col-md-3 col-xs-2 shop">SHOP </div><div class="col col-lg-1 col-md-3 col-xs-2"><hr></div></div>
+<P class="fshop" style="margin: 7px;">Shop from our exclussive list of skincare product...</P>
+    <!-- Three columns of text below the carousel -->
+    <div class="container py-5" id="custom-cards" style="margin: 7px;">
+      <div class="row">
+        <div class="col col-lg-3 col-md-3 col-xs-2 px-3 pb-5">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-sm" style="background-image: url('plastic.jpg'); background-repeat: repeat;background-size: cover;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <ul class="d-flex list-unstyled mt-auto" style="padding-top: 200px;">
+               
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                  <small>Earth</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                  <small>3d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col col-lg-3 col-md-3 col-xs-2 px-3 pb-5">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 " style="background-image: url('plastic1.jpg'); background-repeat: repeat;background-size: cover;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+             
+              <ul class="d-flex list-unstyled mt-auto" style="padding-top: 200px;">
+                
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                  <small>Pakistan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                  <small>4d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col col-lg-3 col-md-3 col-xs-2 px-3 pb-5">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 " style="background-image: url('plastic.jpg'); background-repeat: repeat;background-size: cover;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+             
+              <ul class="d-flex list-unstyled mt-auto" style="padding-top: 200px;">
+                
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                  <small>Pakistan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                  <small>4d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-lg-3 col-md-3 col-xs-2 px-3 pb-5">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 " style="background-image: url('plastic1.jpg'); background-repeat: repeat;background-size: cover;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+             
+              <ul class="d-flex list-unstyled mt-auto" style="padding-top: 200px;">
+                
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                  <small>Pakistan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                  <small>4d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-lg-3 col-md-3 col-xs-2 px-3">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 " style="background-image: url('plastic.jpg'); background-repeat: repeat;background-size: cover;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+             
+              <ul class="d-flex list-unstyled mt-auto" style="padding-top: 200px;">
+                
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                  <small>Pakistan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                  <small>4d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-lg-3 col-md-3 col-xs-2 px-3">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5" style="background-image: url('plastic.jpg'); background-repeat: repeat;background-size: cover;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+             <ul class="d-flex list-unstyled mt-auto" style="padding-top: 200px;">
+               
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                  <small>Pakistan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                  <small>4d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-lg-3 col-md-3 col-xs-2 px-3 h-75">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5" style="background-image: url('plastic1.jpg'); background-repeat: repeat;background-size: cover;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+          
+              <ul class="d-flex list-unstyled mt-auto" style="padding-top: 200px;">
+               
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                  <small>California</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                  <small>5d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<section>
+<div class="container">
+  <div class="" style="text-align: center; font-size: 30px; color: #babdbe; font-weight: 700;">
+  MADE SPECIALLY FOR YOU
+  </div>
+  <P style="text-align: center; color: #babdbe; font-weight: 400;">
+  OUR PRODUCTS ARE MADE WITH LOVE TO ATTEND TO YOUR SKINCARE NEEDS
+  </P>
+
+  <div class="container row pb-5">
+    <div class="col-lg-4 col-md-7" style="text-align: center; font-size: 30px; color: #babdbe; font-weight: 700;">
+      <i class="fa fa-bolt pb-4" aria-hidden="true"></i>
+
+      <p>100%  VEGAN</p>
+    </div>
+    <div class="col-lg-4 col-md-7" style="text-align: center; font-size: 30px; color: #babdbe; font-weight: 700;">
+      <i class="fa fa-handshake-o pb-4" aria-hidden="true"></i>
+      <p>HANDMADE</p>
+      
+    </div>
+    <div class="col-lg-4 col-md-7" style="text-align: center; font-size: 30px; color: #babdbe; font-weight: 700;">
+      <i class="fa fa-cogs pb-4" aria-hidden="true"></i>
+      <p>CRUELTY FREE</p>
+      
+    </div>
+  </div>
+</div>
+<div class="container">
+ <div class="row ">
+
+<div class="col col-lg-5 col-md-3 col-xs-2 shop">CUSTOMERS TESTOMONIES </div><div class="col col-lg-1 col-md-3 col-xs-2"><hr></div></div>
+</div>
+<div class="container row featurette p-5">
+      <div class="col-lg-6 col-md-5 px-4">
+        <iframe width="100%" height="300px"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe></div>
+      <div class="col-lg-6 col-md-7 px-3">
+        <h4 class="featurette-heading">First featurette heading.</h4>
+        <p class="lead" style="color: #00282E; width: 100%;">Lorem Ipsum is simply dummy text of the printing and 
+          typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
+          1500s, </p>
+      </div>
+      
+    </div>
+    <div class="" style="text-align: center; font-size: 30px; color: #babdbe; font-weight: 700;">
+      MORE CUSTOMERS TESTOMONIES
+      </div>
+      <P style="text-align: center; color: #babdbe; font-weight: 400;">
+      OUR PRODUCTS ARE MADE WITH LOVE TO ATTEND TO YOUR SKINCARE NEEDS
+      </P>
+</div>
+<div class="mt-5 mb-5 container">
+  <div class="row">
+    <div class="col col-lg-4 col-md-7 mb-3">
+      
+      <div class="d-flex text-muted pt-3 mb-3 shadow-lg"  style="border: 1px solid #e9ecec; border-radius: 20px;">
+        <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#e83e8c"/><text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text></svg>
+  
+        <p class="pb-3 mb-0 small lh-sm border-bottom">
+          <strong class="d-block text-gray-dark">@username</strong>
+          Some more representative placeholder content, related to this other user. Another status update, perhaps.
+        </p>
+      </div>
+        </div>
+        <div class="col col-lg-4 col-md-7 shadow-lg  mb-3"  style="border: 1px solid #e9ecec; border-radius: 20px;">
+          <div class="d-flex text-muted pt-3">
+            <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#e83e8c"/><text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text></svg>
+      
+            <p class="pb-3 mb-0 small lh-sm border-bottom">
+              <strong class="d-block text-gray-dark">@username</strong>
+              Some more representative placeholder content, related to this other user. Another status update, perhaps.
+            </p>
+          </div>
+            </div>
+            <div class="col col-lg-4 col-md-7  mb-3">
+              <div class="d-flex text-muted pt-3 mb-3 shadow-lg"  style="border: 1px solid #e9ecec; border-radius: 20px;">
+                <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#e83e8c"/><text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text></svg>
+          
+                <p class="pb-3 mb-0 small lh-sm border-bottom">
+                  <strong class="d-block text-gray-dark">@username</strong>
+                  Some more representative placeholder content, related to this other user. Another status update, perhaps.
+                </p>
+              </div>
+                </div>
+                <div class="col-lg-4 col-md-7 px-3">
+                  <div class="d-flex text-muted pt-3 mb-3 shadow-lg"  style="border: 1px solid #e9ecec; border-radius: 20px;">
+                    <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#e83e8c"/><text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text></svg>
+              
+                    <p class="pb-3 mb-0 small lh-sm border-bottom">
+                      <strong class="d-block text-gray-dark">@username</strong>
+                      Some more representative placeholder content, related to this other user. Another status update, perhaps.
+                    </p>
+                  </div>
+                  <div class="d-flex text-muted pt-3 mb-3 shadow-lg"  style="border: 1px solid #e9ecec; border-radius: 20px;">
+                    <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#e83e8c"/><text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text></svg>
+              
+                    <p class="pb-3 mb-0 small lh-sm border-bottom">
+                      <strong class="d-block text-gray-dark">@username</strong>
+                      Some more representative placeholder content, related to this other user. Another status update, perhaps.
+                    </p>
+                  </div>
+                    </div>
+                    <div class="col-lg-4 col-md-7 px-3">
+                      <div class="d-flex text-muted pt-3 mb-3 shadow-lg"  style="border: 1px solid #e9ecec; border-radius: 20px;">
+                        <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#e83e8c"/><text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text></svg>
+                  
+                        <p class="pb-3 mb-0 small lh-sm border-bottom">
+                          <strong class="d-block text-gray-dark">@username</strong>
+                          Some more representative placeholder content, related to this other user. Another status update, perhaps.
+                          Some more representative placeholder content, related to this other user. Another status update, perhaps.
+                          Some more representative placeholder content, related to this other user. Another status update, perhaps.
+                          Some more representative placeholder content, related to this other user. Another status update, perhaps.
+                          Some more representative placeholder content, related to this other user. Another status update, perhaps.
+                        </p>
+                      </div>
+                        </div>
+                        <div class="col-lg-4 col-md-7 px-3">
+                          <div class="d-flex text-muted pt-3 mb-3 shadow-lg"  style="border: 1px solid #e9ecec; border-radius: 20px;">
+                            <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#e83e8c"/><text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text></svg>
+                      
+                            <p class="pb-3 mb-0 small lh-sm border-bottom">
+                              <strong class="d-block text-gray-dark">@username</strong>
+                              Some more representative placeholder content, related to this other user. Another status update, perhaps.
+                            </p>
+                          </div>
+                          <div class="d-flex text-muted pt-3 mb-3 shadow-lg"  style="border: 1px solid #e9ecec; border-radius: 20px;">
+                            <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#e83e8c"/><text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text></svg>
+                      
+                            <p class="pb-3 mb-0 small lh-sm border-bottom">
+                              <strong class="d-block text-gray-dark">@username</strong>
+                              Some more representative placeholder content, related to this other user. Another status update, perhaps.
+                            </p>
+                          </div>
+                        </div>
+        
+        </div>
+    </div>
+  </div>
+</div>
+    <div class=""  style="background-color: #00282E;">
+        <div class="cont" style="overflow:hidden;">
+          <div class="row">
+          <div class="col-lg-9 col-md-7 mt-5 px-5">
+            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+            <p class="lead">
+              Some more representative placeholder content, related to this other user. Another status update, perhaps.
+              Some more representative placeholder content, related to this other user. Another status update, perhaps.
+              Some more representative placeholder content, related to this other user. Another status update, perhaps.
+              
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <img class="rounded-lg-3" src="h2.png" alt="" width="100%">
+          </div>
+        </div>
+        </div>
+</div>
+</div>
+</section>
+<section>
+  <P class="mt-5" style="text-align: center; color: #babdbe; font-weight: 700; font-size: larger;">
+   DO YOU WANT TO BE THE FIRST TO KNOW WHEN WE RESTOCK ?
+    </P>
+    <center  class="mb-4" >
+      
+      <form action="https://www.w3schools.com/action_page.php" class="mb-4">
+        <input type="text" placeholder="Search.." class="shadow-lg" name="search" style="border: 1px solid rgb(238, 235, 235); border-radius: 20px 0px 0px 20px; width: 400px; height: 70px; text-align: center; padding-right: -20px; margin-right: -10px; box-shadow: inset;">
+        <button type="submit" class="shadow-lg btn" style="height: 70px; width: 200px;font-weight: 600; border-radius: 0 20px 20px 0;color: #00282E; background-color: rgb(245, 252, 150);">I WANT IN</button>
+      </form>
+    </center>
+</section>
+<section>
+</section
+<section>
+  <!-- Site footer -->
+  <footer class="site-footer">
+
+    <div class="container">
+      <div class="" style="font-size: 30px; font-weight: 900; text-align: center;">
+        <img src="logo.png" width="90px" />
+      </div>
+     
+      <div class="row mt-5" style="margin-left: 32%;">
+        <div class="col-md-2 col-sm-6 col-xs-12" style="font-size: 15px; font-weight: 900; text-align: center;" >
+          PRODUCTS
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-12" style="font-size: 15px; font-weight: 900; text-align: center;" >
+          FAQ
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-12" style="font-size: 15px; font-weight: 900; text-align: center;" >
+          CONTACT
+        </div>
+      </div>
+    </div>
+</center>
+</footer>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+    </body>
